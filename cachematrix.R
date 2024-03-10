@@ -2,9 +2,9 @@ library(MASS)
 
 ## Put comments here that give an overall description of what your
 ## functions do
+## using the example, we can go like this: 
 
 ## makeCacheMatrix consists of set, get, setinv and getinv 
-
 makeCacheMatrix <- function(x = matrix()) {
 # inverse as NULL
 inv <- NULL  
@@ -24,6 +24,7 @@ list(set=set, get=get, setinv=setinv, getinv=getinv)
 }
 ## Write a short comment describing this function.
 ## used to get chache data
+## using the example of "setmean" we can go forward like this: 
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
@@ -38,5 +39,4 @@ cacheSolve <- function(x, ...) {
   inv
   ## return a matrix that is the inverse of x 
 } 
-
   
