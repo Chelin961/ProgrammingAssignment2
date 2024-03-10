@@ -22,8 +22,6 @@ getinv <- function() {
 
 list(set=set, get=get, setinv=setinv, getinv=getinv)
 }
-
-
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
