@@ -15,15 +15,28 @@ set <- function(y) {
 # function to get matrix x 
 get <- function()x
 setinv <- function(inverse)inv<<-inverse
-getinv <- function() {
+getinv <- function(){
   inver <- ginv(x)
-  inver%*%       #function to obtain inverse of the matrix
-}
+  inver%*%x  
+  }
 
 list(set=set, get=get, setinv=setinv, getinv=getinv)
 }
-## Write a short comment describing this function
+## Write a short comment describing this function.
+## used to get chache data
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
-}
+  inv <- x$getinverse()
+  if (!is.null(i)) {
+    message("getting cached data")
+    return(inv)
+  }
+  data <- x$get()
+  inv <- solve(data, ...)
+  x$setinv(inv)
+  inv
+  ## return a matrix that is the inverse of x 
+} 
+
+  
